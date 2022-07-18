@@ -11,7 +11,6 @@ function About() {
                 <strong>
                     <a href='https://rahul-rkm.github.io/ProGrid' target='blank'> Rahul Kumar</a>
                 </strong>
-                .
             </p>
             <p className='text-lg text-gray-400'>
                 Version <span className='text-white'>1.0.0</span>
