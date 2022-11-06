@@ -67,15 +67,15 @@ export const GithubProvider = ({ children }) => {
             sort: 'created',
             per_page: 20
         })
-        const response = await fetch(`${GITHUB_URL}/users/${login}/repos?${params}`,);
-        // {
-        //     headers: {
-        //         'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-        //         Authurization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
-        //         // "access-control-allow-origin": "*",
-        //         // 'Access-Control-Allow-Methods': '*',
-        //     }
-        // });
+        const response = await fetch(`${GITHUB_URL}/users/${login}/repos?${params}`,
+            {
+                headers: {
+                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                    Authurization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
+                    "access-control-allow-origin": "*",
+                    'Access-Control-Allow-Methods': '*',
+                }
+            });
         const data = await response.json();
         dispatch({
             type: 'GET_REPOS',
