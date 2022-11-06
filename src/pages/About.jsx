@@ -7,7 +7,7 @@ function About() {
             <p className='mb-4 text-2xl font-light'>
                 A React app to search GitHub profiles and see profile details.
                 <br />
-                Built with ♥ by
+                Built with ❤️ by
                 <strong>
                     <a href='https://rahul-rkm.github.io/ProGrid' target='blank'> Rahul Kumar</a>
                 </strong>
